@@ -1,0 +1,47 @@
+body, html {
+    height:100%;
+}
+
+.bg {
+    height: 100%;
+    background-image: url("bg-img.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar ul{
+    list-style-type: none;
+    
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    background-color: hsl(177, 42%, 26%); 
+}
+
+.navbar a{
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover{
+    background-color:hsl(14, 80%, 42%) ;
+}
+
+.navbar li{
+    float:left;
+    padding:10px;
+}
+
+table,th,td{
+    border: 1px solid black;
+}
+
+ 

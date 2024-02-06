@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog1</title>
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet alternate" href="dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .bg{
+            height: 100%;
+        }
+        .like-button {
+            background-color: #010f1815;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .liked {
+            color: #ff69b4; 
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-between; 
+            width: 150px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="bg" style="width: 100%;">
+        <nav class="navbar">
+            <ul class="container">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a onclick="themeswitch()" style="cursor: pointer;" id="theme-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                  </svg></a></li>
+
+            </ul>
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/joharatharv/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://github.com/joharatharv" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="mailto: joharatharv@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+        <div class="text-section">
+            <h2>Blog 1: The Lorem</h2>
+            <button onclick="toggleLike()"  class="like-button"><i style="font-size: 50px;" id="like-button" class="fas fa-heart"></i></button>
+            <div class="container">
+                <p style="width: 100;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem repellendus itaque sapiente quibusdam at repellat, accusantium et provident cumque quasi assumenda eum iure numquam, quae molestias, omnis nam quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur accusamus ipsam consectetur itaque facilis ratione expedita incidunt quas, facere fuga repellendus earum aut non quisquam harum odit perspiciatis praesentium animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit dolores quod sequi eius quidem deserunt officia, similique omnis totam accusamus, asperiores debitis, quibusdam rerum. Voluptate aperiam consequuntur odio adipisci voluptatibus!
+                </p>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script>
+        function themeswitch(){
+            let cur = document.querySelector("link[rel='stylesheet']");
+            let next = document.querySelector("link[rel='stylesheet alternate']");
+
+            cur.setAttribute("rel", "stylesheet alternate");
+            next.setAttribute("rel", "stylesheet");
+        }
+
+        function toggleLike() {
+            var button = document.getElementById("like-button");
+            button.classList.toggle("liked");
+        }
+    </script>
+</body>
+</html>

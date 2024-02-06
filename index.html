@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet alternate" href="dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        #theme-button:hover svg{
+            fill: black;
+        }
+        .navbar ul.social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .navbar ul.social-icons li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <nav class="navbar">
+            <ul class="container">
+                <li><a href="#About">About myself</a></li>
+                <li><a href="#Education">Education background</a></li>
+                <li><a href="#Achievements">Achievements</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><a href="OPS.pdf">Hackathon Project</a></li>
+                <li><a onclick="themeswitch()" style="cursor: pointer;" id="theme-button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                  </svg></a></li>
+                  
+            </ul>
+                <ul class="social-icons">
+                <li><a href="https://www.instagram.com/joharatharv/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/joharatharv" target="_blank"><i class="fab fa-github"></i></a></li>
+                  <li><a href="mailto: joharatharv@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+        </nav>
+    
+        <div class="text-section">
+            <h2 id="About">About myself</h2>
+            <div class="container">
+                <p style="width: 80%; margin-right: 10%;">
+                    I'm Atharv Johar, a passionate individual with a strong inclination towards sports and music. While I identify more with extracurricular pursuits, I'm fully capable of excelling in academic endeavors as well. My outdoor spirit thrives during runs and walks, allowing me to connect with nature and stay active. Music is a significant part of my life, and I am particularly enamored with the guitar, showcasing proficiency in both guitar and piano. I also enjoy expressing myself through song. Additionally, I find joy in watching basketball, appreciating the skill and excitement of the game. Overall, my diverse interests reflect a well-rounded and enthusiastic individual.Oh yes, I also have a crooked nose.
+                </p>
+                <img src="me.jpeg" style="width: 100%; height: auto; max-width: 100px; border-radius: 50%;">
+            </div>
+        </div>
+
+        <div class="text-section">
+            <h2 id="Education">Educational background</h2>
+            <div class="education-container">
+                
+                <div class="education-section" id="schooling">
+                    <h3>Schooling</h3>
+                    <p>6th to 10th: FIITJEE</p>
+                    <p>11th and 12th: Delhi Public School</p>
+                    <p>Science Stream</p>
+                </div>
+                <div class="education-section" id="college">
+                    <h3>College</h3>
+                    <p>Interational Institute of Information Technology Hyderabad</p>
+                    <p>Dual Degree in Computer Science and Computational Linguistics</p>
+                    <!-- <ul>
+                        <li>IIIT Hyderabad CLD branch</li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="text-section">
+            <h2 id="Skills">Skills</h2>
+            <div class="container">
+                <p style="width: 100%;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim nemo suscipit, saepe praesentium quasi possimus velit quam pariatur laboriosam ad quaerat adipisci tempora. Neque minima sint illo perspiciatis, nostrum temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore reiciendis consequatur officiis ipsum error quidem quis nostrum et ducimus adipisci aperiam, molestias aut sunt nemo iusto illum id? Quo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque enim reiciendis ipsam iste nisi nostrum commodi quia odit. Sapiente illum at possimus facere voluptatum in qui vel iste adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam enim, odit adipisci iste cumque magnam quasi quidem magni consectetur ea, consequuntur consequatur ipsum reiciendis esse natus amet qui dolores accusamus?
+                </p>
+            </div>
+        </div>
+        <div class="text-section">
+            <h2 id="Achievements">Achievements</h2>
+            <table style="width: 100%;">
+                <tr>
+                    <th>Basketball</th>
+                    <th>Music</th>
+                </tr>
+                <tr>
+                    <td>2nd place in VNRVJIET tournament wiht IIIT team</td>
+                    <td>1st place in Batlle of Bands(BOB) in the UK</td>
+                </tr>
+                <tr>
+                    <td>2nd place in NIFT Hyderabad tournament and won 10k rupees</td>
+                    <td>1st place in a music competition for playnig the piano</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="text-section">
+        <h2 id="Blog">Blogs</h2>
+        <div class="education-container">
+    
+            <!-- Placeholder for Blog 1 -->
+            <div class="blog-section" id="blog1">
+                <h3><a href="blog1.html" target="_blank">Blog 1</a></h3>
+            </div>
+    
+            <!-- Placeholder for Blog 2 -->
+            <div class="blog-section" id="blog2">
+                <h3><a href="blog2.html" target="_blank">Blog 2</a></h3>
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+    <script>
+        function themeswitch(){
+            let cur = document.querySelector("link[rel='stylesheet']");
+            let next = document.querySelector("link[rel='stylesheet alternate']");
+
+            cur.setAttribute("rel", "stylesheet alternate");
+            next.setAttribute("rel", "stylesheet");
+        }
+    </script>
+
+    
+
+</body>
+</html>

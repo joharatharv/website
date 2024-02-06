@@ -1,0 +1,132 @@
+* {
+    transition: color 0.3s ease, background-image 0.3s ease, background-color 0.3s ease;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #dddddd; /* Lighter font color for better visibility */
+    background-color: #121212; /* Dark background color */
+    text-align: center;
+}
+
+.bg {
+    /* height: 100%; */
+    background-image: url("dark-bg.jpeg");
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 300%; */
+    margin: 0; 
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.container {
+    display: flex;
+    padding: 30px; /* Increased padding for better spacing */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #222;
+    padding: 20px; /* Increased padding for better spacing */
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 15px; /* Increased padding for better spacing */
+    font-size: 16px; /* Adjusted font size */
+}
+
+.navbar a:hover {
+    background-color: #444;
+}
+
+.text-section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px; /* Increased padding for better spacing */
+    margin-top: 20px;
+    border-radius: 12px; /* Increased border-radius for a softer look */
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 24px; /* Adjusted font size for section headers */
+}
+
+p {
+    font-size: 18px; /* Adjusted font size for paragraphs */
+    line-height: 1.6; /* Adjusted line height for better readability */
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+table, th, td {
+    border: 1px groove #dddddd; /* Lighter border for tables */
+    color: #dddddd;
+    padding: 15px; /* Increased padding for better spacing */
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px; /* Increased margin for better spacing */
+}
+
+.education-section {
+    width: 30%; /* Adjusted width for better spacing */
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 15px; /* Increased margin for better spacing */
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+
+    .text-section {
+        padding: 15px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    table, th, td {
+        padding: 10px;
+    }
+
+    .education-section {
+        width: 100%;
+    }
+}
